@@ -1,0 +1,69 @@
+@charset "UTF-8";
+* {
+  /*En todos los elementos vamos a aplicar la propiedad box-sizin, es decir, el padding y border se incluirán en el ancho y alto del elemento*/
+  box-sizing: border-box;
+}
+
+/* Estilo del menú */
+.menusuperior {
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 50px;
+}
+
+/* Estilo de los elementos del menú */
+.menusuperior a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Efecto al situar el ratón encima de los enlaces */
+.menusuperior a:hover {
+  background-color: gold;
+  color: black;
+}
+
+
+
+.contenedor2StaCieJak{
+
+    
+    min-height: 500px;
+    width: 50%;
+    border:1px solid black;
+    
+}
+@media screen and (min-width:500px){
+    .contenedor2StaCieJak{
+        float: left;
+        width: 50%;
+
+    }
+}
+@media screen and (max-width:500px){
+    .contenedor2StaCieJak{
+       
+        float: none;
+        width: 100%;
+        
+
+    }
+}
+.mixinStaCieJak{
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        border: 4px solid blue;
+        font-family: 'Ma Shan Zheng', cursive;
+
+}
+@font-face {
+  font-family: mifuente1;
+  src: url("../alojarStaCieJak/fonts/MaShanZheng-Regular.ttf");
+}

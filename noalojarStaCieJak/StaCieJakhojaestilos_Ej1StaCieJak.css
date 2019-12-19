@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body {
+  counter-reset: Seccion;
+}
+
+h1 {
+  counter-reset: SubSeccion;
+}
+
+h1:before {
+  counter-increment: Seccion;
+  content: "Subscripcion " counter(Seccion) ". ";
+}
+
+h2 {
+  counter-reset: SubSubSeccion;
+}
+
+h2:before {
+  counter-increment: SubSeccion;
+  content: counter(Seccion) "." counter(SubSeccion) ". ";
+}
+
+h3:before {
+  counter-increment: SubSubSeccion;
+  content: counter(Seccion) "." counter(SubSeccion) "." counter(SubSubSeccion) ". ";
+  color: lightblue;
+}
+
+.contenedorStaCieJak {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-color: lightblue;
+  min-height: 500px;
+}
+
+.elemento1StaCieJak {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: lightgray;
+  border: black 1px solid;
+  justify-content: center;
+  width: 48%;
+}
+
+.elemento2StaCieJak {
+  padding: 10px;
+  display: flex;
+  border: lightcoral 1px dotted;
+  justify-content: center;
+  width: 40%;
+  align-items: center;
+}
+
+* {
+  /*En todos los elementos vamos a aplicar la propiedad box-sizin, es decir, el padding y border se incluirán en el ancho y alto del elemento*/
+  box-sizing: border-box;
+}
+
+/* Estilo del menú */
+.menusuperior {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Estilo de los elementos del menú */
+.menusuperior a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Efecto al situar el ratón encima de los enlaces */
+.menusuperior a:hover {
+  background-color: gold;
+  color: black;
+}
+
+/*# sourceMappingURL=StaCieJakhojaestilos_Ej1StaCieJak.css.map */
